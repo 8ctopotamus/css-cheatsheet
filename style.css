@@ -1,0 +1,68 @@
+:root {
+  --outer-space: #33393f;
+  --bright-turquoise: #2aefcb;
+  --gin: #e0eae4;
+  --heliotrope: #e866ec;
+  --radius: 8px;
+}
+
+body {
+  background-color: var(--outer-space);
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .card p {
+  color: var(--heliotrope);
+}
+
+header, footer {
+  text-align: center;
+}
+
+figure {
+  margin: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: stretch; */
+}
+
+.card {
+  border: 4px dotted var(--gin);
+  padding: 20px;
+  /* height: 100%; */
+}
+
+.card-header {
+  background-color: var(--outer-space);
+  border: 2px solid white;
+  border-radius: var(--radius);
+  margin-top: -38px;
+  padding: var(--radius);
+}
+
+.code-block {
+  background-image: linear-gradient(#a23ca4, var(--heliotrope));
+  padding: var(--radius);
+  white-space: pre-wrap;
+}
+
+.card-column {
+  width: 100%;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .card-column {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-column {
+    width: 33.333%;
+  }
+}
